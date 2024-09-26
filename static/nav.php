@@ -1,18 +1,19 @@
 <nav id="nav">
     <section class='firstNav'>
         <a href='index.php' class='navTitleContainer'>
-            <div class='repuContainer'>
-                <img src='css/img/flag.svg' class='flag'>
-                <p class='repu'>RÉPUBLIQUE FRANÇAISE</p>
-                <img src='css/img/devise.svg' class='devise'>
-            </div>
-            <div class='navTitle'>Scrutin électronique</div>
+            <img class='logoRF' src='css/img/Logo_RF.svg'>
+            <h1 class='navTitle'>Scrutin électronique</h1>
         </a>
         <div class='blueNav'>
-            <a href='' class='blueBtn'>Bouton potentiel</a>
+            <a href='' class='blueBtn'>Bouton</a>
+            <a href='' class='blueBtn'>Bouton</a>
+            <a href='' class='blueBtn'>Bouton</a>
         </div>
     </section>
+    <div class='separationNav'></div>
     <section class='secondNav'>
+        <a href='' class='blackBtn'>Bouton</a>
+        <a href='' class='blackBtn'>Bouton</a>
         <a href='' class='blackBtn'>Bouton</a>
     </section>
 </nav>

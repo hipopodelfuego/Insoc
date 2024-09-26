@@ -131,7 +131,6 @@
 }
 
 * {
-  background-color: var(--white);
   font-family: 'Marianne', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -150,13 +149,24 @@ body{
   margin: 0;
 }
 
-#nav {
-  background: var(--white);
-  box-shadow: 16px 0px 8px var(--grey-dark);
+h1 {
+  font-size: 21px;
+  font-weight: 700;
 }
 
-#nav .firstNav {
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100lvw;
+  background: var(--white);
+  box-shadow: 0px 0px 6px var(--grey-dark);
+}
+
+.firstNav {
+  margin: 8px 0 12px 0;
+  width:calc(100lvw - 40px);
+  max-width: 1250px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -169,25 +179,68 @@ body{
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 30px;
+  gap:20px;
+  background-color: var(--white);
+  transition:background-color 0.1s ease;
+  padding:14px 20px;
 }
 
-.firstNav .repuContainer {
-  width: 100px;
+.firstNav .navTitleContainer:hover {
+  background-color: var(--grey);
+}
+
+.firstNav .logoRF {
+  width: 85px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: start;
 }
 
-.repuContainer .flag {
-  width: 40px;
-  height: auto;
+.firstNav .blueNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap:10px;
+  padding:14px 20px;
 }
 
-.repuContainer .repu {
-  margin: 4px 0;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 14px;
+.firstNav .blueNav .blueBtn {
+  font-size: 14px;
+  color: var(--blue);
+  padding:6px 12px 8px 12px;
+  background-color: var(--white);
+  transition:background-color 0.1s ease;
+}
+
+.firstNav .blueNav .blueBtn:hover{
+  background-color: var(--grey);
+}
+
+.separationNav {
+  width: 100vw;
+  height: 1px;
+  background-color: var(--grey-dark);
+}
+
+.secondNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:10px;
+  width:calc(100lvw - 40px);
+  max-width: 1250px;
+}
+
+.secondNav .blackBtn {
+  font-size: 14px;
+  font-weight: 500;
+  padding:16px 20px 18px 20px;
+  background-color: var(--white);
+  transition:background-color 0.1s ease;
+}
+
+.secondNav .blackBtn:hover {
+  background-color: var(--grey);
 }
