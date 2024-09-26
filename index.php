@@ -18,8 +18,13 @@ session_start();
     </head>
     <body>
         <?php include("static/header.php"); ?>
-        <?php include("static/nav.php"); ?>
         <main>
+            <section class='electionsBackground'>
+                <div class='elections'>
+                    <a href='' class='voteBtn'>Je vote</a>
+                    <div id="countdown" class='decompte'></div>
+                </div>
+            </section>
         </main>
         <?php include("static/footer.php"); ?>
         <script src="js/index.js"></script>

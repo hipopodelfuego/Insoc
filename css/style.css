@@ -147,6 +147,7 @@
 
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -154,7 +155,7 @@ h1 {
   font-weight: 700;
 }
 
-#nav {
+#header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,4 +244,65 @@ h1 {
 
 .secondNav .blackBtn:hover {
   background-color: var(--grey);
+}
+
+main {
+  position: relative;
+  width: 100lvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.electionsBackground {
+  width: 100lvw;
+  background-color: var(--grey);
+}
+
+.elections {
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:calc(100lvw - 40px);
+  max-width: 1250px;
+}
+
+.elections .decompte {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 1000px;
+  font-size: 400px;
+  color:var(--blue);
+  opacity: 0.05;
+  font-weight: 600;
+  letter-spacing:-20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: -2%;
+}
+
+.voteBtn {
+  font-size : 42px;
+  color:var(--white);
+  background-color: var(--blue);
+  padding: 10px 40px 20px 40px;
+  transition: background-color 0.1s ease;
+  z-index: 5;
+}
+
+.voteBtn:hover {
+  background-color:var(--blue-hover);
 }
