@@ -1,7 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Thin */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Thin.woff2') format('woff2'),
+        url('fonts/Marianne-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Light.woff2') format('woff2'),
+        url('fonts/Marianne-Light.woff') format('woff');
+  font-weight:400;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Regular.woff2') format('woff2'),
+        url('fonts/Marianne-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Medium.woff2') format('woff2'),
+        url('fonts/Marianne-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Bold.woff2') format('woff2'),
+        url('fonts/Marianne-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Extra-Bold */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-ExtraBold.woff2') format('woff2'),
+        url('fonts/Marianne-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Thin-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Thin_Italic.woff2') format('woff2'),
+        url('fonts/Marianne-Thin_Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Light-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Light_Italic.woff2') format('woff2'),
+        url('fonts/Marianne-Light_Italic.woff') format('woff');
+  font-weight:400;
+  font-style: italic;
+}
+
+/* Regular-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Regular_Italic.woff2') format('woff2'),
+        url('fonts/Marianne-Regular_Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Medium-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Medium_Italic.woff2') format('woff2'),
+        url('fonts/Marianne-Medium_Italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-Bold_Italic.woff2') format('woff2'),
+        url('fonts/Marianne-Bold_Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Extra-Bold-Italic */
+@font-face {
+  font-family: 'Marianne', sans-serif;
+  src:  url('fonts/Marianne-ExtraBold_Italic.woff') format('woff2'),
+        url('fonts/Marianne-ExtraBold_Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Marianne', sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
