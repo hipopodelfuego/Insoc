@@ -1,113 +1,140 @@
 /* Thin */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Thin.woff2') format('woff2'),
-        url('fonts/Marianne-Thin.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Thin.woff2") format("woff2"),
+        url("fonts/Marianne-Thin.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 /* Light */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Light.woff2') format('woff2'),
-        url('fonts/Marianne-Light.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Light.woff2") format("woff2"),
+        url("fonts/Marianne-Light.woff") format("woff");
   font-weight:400;
   font-style: normal;
 }
 
 /* Regular */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Regular.woff2') format('woff2'),
-        url('fonts/Marianne-Regular.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Regular.woff2") format("woff2"),
+        url("fonts/Marianne-Regular.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 /* Medium */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Medium.woff2') format('woff2'),
-        url('fonts/Marianne-Medium.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Medium.woff2") format("woff2"),
+        url("fonts/Marianne-Medium.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 /* Bold */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Bold.woff2') format('woff2'),
-        url('fonts/Marianne-Bold.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Bold.woff2") format("woff2"),
+        url("fonts/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 /* Extra-Bold */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-ExtraBold.woff2') format('woff2'),
-        url('fonts/Marianne-ExtraBold.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-ExtraBold.woff2") format("woff2"),
+        url("fonts/Marianne-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 /* Thin-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Thin_Italic.woff2') format('woff2'),
-        url('fonts/Marianne-Thin_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Thin_Italic.woff2") format("woff2"),
+        url("fonts/Marianne-Thin_Italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 /* Light-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Light_Italic.woff2') format('woff2'),
-        url('fonts/Marianne-Light_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Light_Italic.woff2") format("woff2"),
+        url("fonts/Marianne-Light_Italic.woff") format("woff");
   font-weight:400;
   font-style: italic;
 }
 
 /* Regular-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Regular_Italic.woff2') format('woff2'),
-        url('fonts/Marianne-Regular_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Regular_Italic.woff2") format("woff2"),
+        url("fonts/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
 
 /* Medium-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Medium_Italic.woff2') format('woff2'),
-        url('fonts/Marianne-Medium_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Medium_Italic.woff2") format("woff2"),
+        url("fonts/Marianne-Medium_Italic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
 
 /* Bold-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-Bold_Italic.woff2') format('woff2'),
-        url('fonts/Marianne-Bold_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-Bold_Italic.woff2") format("woff2"),
+        url("fonts/Marianne-Bold_Italic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
 /* Extra-Bold-Italic */
 @font-face {
-  font-family: 'Marianne', sans-serif;
-  src:  url('fonts/Marianne-ExtraBold_Italic.woff') format('woff2'),
-        url('fonts/Marianne-ExtraBold_Italic.woff') format('woff');
+  font-family: 'Marianne';
+  src:  url("fonts/Marianne-ExtraBold_Italic.woff") format("woff2"),
+        url("fonts/Marianne-ExtraBold_Italic.woff") format("woff");
   font-weight: 800;
   font-style: italic;
 }
 
+:root {
+  --white:#ffffff;
+  --white-hover:#F6F6F6;
+  --white-active:#ededed;
+
+  --grey : #f6f6f6;
+  --grey-hover:#dfdfdf;
+  --grey-active:#cfcfcf;
+
+  --grey-dark:#cecece;
+  --grey-dark-hover:#a8a8a8;
+  --grey-dark-active:#939393;
+
+  --blue:#000091;
+  --blue-hover:#1212ff;
+  --blue-active:#2323ff;
+
+  --red:#E1000F;
+  --red-hover:#ff292f;
+  --red-active:#ff4347;
+
+  --text:#000000;
+}
+
 * {
+  background-color: var(--white);
   font-family: 'Marianne', sans-serif;
+  font-style: normal;
+  font-weight: 600;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -115,4 +142,52 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color:rgba(0,0,0,0);
+  text-decoration: none;
+  color: var(--text);
+}
+
+body{
+  margin: 0;
+}
+
+#nav {
+  background: var(--white);
+  box-shadow: 16px 0px 8px var(--grey-dark);
+}
+
+#nav .firstNav {
+  width: 100lvw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstNav .navTitleContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 30px;
+}
+
+.firstNav .repuContainer {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+
+.repuContainer .flag {
+  width: 40px;
+  height: auto;
+}
+
+.repuContainer .repu {
+  margin: 4px 0;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 14px;
 }

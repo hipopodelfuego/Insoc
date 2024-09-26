@@ -2,3 +2,8 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^accueil$ index.php [NC,L]
 RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+<IfModule mod_mime.c>
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+</IfModule>

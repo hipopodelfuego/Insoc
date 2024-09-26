@@ -13,7 +13,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Vote en ligne</title>
+        <title>Accueil - Scrutin électronique</title>
         <?php include("static/head.php")?>
     </head>
     <body>
