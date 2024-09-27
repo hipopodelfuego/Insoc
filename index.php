@@ -20,9 +20,12 @@ session_start();
         <?php include("static/header.php"); ?>
         <main>
             <section class='electionsBackground'>
-                <div class='elections'>
+                <div id='electionsEnCours' class='elections disabled'>
                     <a href='' class='voteBtn'>Je vote</a>
                     <div id="countdown" class='decompte'></div>
+                </div>
+                <div id='prochainesElections' class='elections'>
+                    <a href='' class='voteBtn'>Vérifier mon inscription</a>
                 </div>
             </section>
         </main>

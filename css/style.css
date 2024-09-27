@@ -162,6 +162,7 @@ h1 {
   width: 100lvw;
   background: var(--white);
   box-shadow: 0px 0px 6px var(--grey-dark);
+  z-index:10;
 }
 
 .firstNav {
@@ -265,6 +266,11 @@ section {
   background-color: var(--grey);
 }
 
+#electionsEnCours.disabled, #prochainesElections.disabled {
+  display: none ;
+}
+
+
 .elections {
   height: 600px;
   position: relative;
@@ -280,17 +286,17 @@ section {
   position:absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-50%,-50%);
-  width: 1000px;
-  font-size: 400px;
+  transform:translate(-50%,-55%);
+  width: 100lvw;
+  font-size: 450px;
   color:var(--blue);
   opacity: 0.05;
   font-weight: 600;
-  letter-spacing:-20px;
+  letter-spacing:-30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin-top: -2%;
 }
 
