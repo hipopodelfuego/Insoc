@@ -21,10 +21,17 @@ session_start();
         <main>
             <section class='electionsBackground'>
                 <div id='electionsEnCours' class='elections disabled'>
-                    <a href='' class='voteBtn'>Je vote</a>
-                    <div id="countdown" class='decompte'></div>
+                    <div class='libelle'>
+                        <p>Les élections se terminent dans :</p>
+                        <div id="countdown" class='decompte'></div>
+                    </div>
+                    <a href='' class='voteBtn'>Je vote !</a>
                 </div>
                 <div id='prochainesElections' class='elections'>
+                    <div class='libelle'>
+                        <p>Les prochaines élections commencent dans :</p>
+                        <div id="countdown" class='decompte'></div>
+                    </div>
                     <a href='' class='voteBtn'>Vérifier mon inscription</a>
                 </div>
             </section>

@@ -264,6 +264,11 @@ section {
 .electionsBackground {
   width: 100lvw;
   background-color: var(--grey);
+  background-image: url("img/hand.svg"), url("img/urne.svg"), url("img/blob.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: -10% 70%, 125% -10%, 50% 50%;
+  background-clip: cover, cover, cover;
+  background-size: 50%, 50%, 30%;
 }
 
 #electionsEnCours.disabled, #prochainesElections.disabled {
@@ -276,23 +281,33 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width:calc(100lvw - 40px);
   max-width: 1250px;
 }
 
-.elections .decompte {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%,-55%);
-  width: 100lvw;
-  font-size: 450px;
+.elections .libelle {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  margin-top: 140px;
+  margin-bottom: 50px;
+}
+
+.elections .libelle p {
+  font-size: 24px;
   color:var(--blue);
-  opacity: 0.05;
-  font-weight: 600;
-  letter-spacing:-30px;
+  font-weight: 700;
+}
+
+.elections .decompte {
+  width: 100lvw;
+  font-size: 48px;
+  color:var(--blue);
+  opacity: 1;
+  font-weight: 750;
+  /* letter-spacing:-30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,14 +316,14 @@ section {
 }
 
 .voteBtn {
-  font-size : 42px;
+  font-size : 52px;
   color:var(--white);
-  background-color: var(--blue);
+  background-color: var(--red);
   padding: 10px 40px 20px 40px;
   transition: background-color 0.1s ease;
   z-index: 5;
 }
 
 .voteBtn:hover {
-  background-color:var(--blue-hover);
+  background-color:var(--red-hover);
 }
