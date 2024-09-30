@@ -35,6 +35,7 @@ session_start();
                     <a href='' class='voteBtn'>Vérifier mon inscription</a>
                 </div>
             </section>
+            <section class='partisList'></section>
         </main>
         <?php include("static/footer.php"); ?>
         <script src="js/index.js"></script>
