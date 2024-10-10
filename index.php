@@ -25,7 +25,7 @@ session_start();
                         <p>Les élections se terminent dans :</p>
                         <div id="countdown" class='decompte'></div>
                     </div>
-                    <a href='' class='voteBtn'>Je vote !</a>
+                    <a href='connect.php' class='voteBtn'>Je vote !</a>
                 </div>
                 <div id='prochainesElections' class='elections'>
                     <div class='libelle'>
