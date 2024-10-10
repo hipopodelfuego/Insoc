@@ -47,6 +47,7 @@ session_start();
                 <label for="c_password">Confirmez votre mot de passe</label>
                 <input type="password" name="c_mdp" id="c_password" required>
 
+                <h3>Conditions générales d'utilisation</h3>
                 <div class='coche'>
                     <input type="checkbox" name="cgu" id="condition" >
                     <label for="condition">J'accepte les conditions générales d'utilisation</label>

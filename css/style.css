@@ -497,5 +497,42 @@ form .info span {
 }
 
 form .coche {
-  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+form .coche label {
+  margin: 0;
+}
+
+form .coche input[type='checkbox']{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--white);
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: solid var(--blue) 1px;
+  border-radius: 4px;
+}
+
+form .coche input[type='checkbox']:hover {
+  cursor:pointer;
+}
+
+form .coche input[type='checkbox']:checked {
+  background-color: var(--blue);
+}
+
+form .coche input[type='checkbox']:checked::after {
+  content:'✓';
+  color:var(--white);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  transform: translateY(-10%);
 }
