@@ -111,13 +111,17 @@
   --white-hover:#F6F6F6;
   --white-active:#ededed;
 
-  --grey : #f6f6f6;
-  --grey-hover:#dfdfdf;
-  --grey-active:#cfcfcf;
+  --light-grey : #f6f6f6;
+  --light-grey-hover:#dfdfdf;
+  --light-grey-active:#cfcfcf;
 
-  --grey-dark:#cecece;
-  --grey-dark-hover:#a8a8a8;
-  --grey-dark-active:#939393;
+  --grey:#cecece;
+  --grey-hover:#a8a8a8;
+  --grey-active:#939393;
+
+  --dark-grey:#666666;
+  --dark-grey-hover:#919191
+  --dark-grey-active:#a6a6a6;
 
   --blue:#000091;
   --blue-hover:#1212ff;
@@ -209,7 +213,7 @@ h1 {
 }
 
 .firstNav .navTitleContainer:hover {
-  background-color: var(--grey);
+  background-color: var(--light-grey);
 }
 
 .firstNav .logoRF {
@@ -238,13 +242,13 @@ h1 {
 }
 
 .firstNav .blueNav .blueBtn:hover{
-  background-color: var(--grey);
+  background-color: var(--light-grey);
 }
 
 .separationNav {
   width: 100vw;
   height: 1px;
-  background-color: var(--grey-dark);
+  background-color: var(--grey);
 }
 
 .secondNav {
@@ -265,7 +269,7 @@ h1 {
 }
 
 .secondNav .blackBtn:hover {
-  background-color: var(--grey);
+  background-color: var(--light-grey);
 }
 
 main {
@@ -284,7 +288,7 @@ section {
 
 .electionsBackground {
   width: 100lvw;
-  background-color: var(--grey);
+  background-color: var(--light-grey);
   background-image: url("img/hand.svg"), url("img/urne.svg"), url("img/blob.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: -10% 70%, 125% -10%, 50% 50%;
@@ -347,4 +351,68 @@ section {
 
 .voteBtn:hover {
   background-color:var(--red-hover);
+}
+
+
+
+
+
+
+
+
+.connectForm, .registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width:calc(100lvw - 40px);
+  max-width: 620px;
+  gap: 6px;
+}
+
+form h1 {
+  font-size: 40px;
+  width: 100%;
+  margin: 30px 0 15px 0;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+ 
+form .exemple {
+  font-size: 10px;
+  color:var(--dark-grey)
+}
+
+form input[type='email'], form input[type='password'] {
+  width: 100%;
+  border: none;
+  background-color: var(--light-grey);
+  border-bottom: solid var(--text) 2px;
+  font-size: 17px;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.formBtn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+}
+
+.formBtn a {
+  color: var(--blue);
+}
+
+.formBtn a span {
+  border-bottom: solid var(--blue) 1px;
+  color: var(--blue);
+}
+
+.form a:hover span {
+  border-bottom: solid var(--blue) 2px;
+  color: var(--blue-hover);
 }
