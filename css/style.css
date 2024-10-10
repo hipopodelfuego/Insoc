@@ -387,7 +387,7 @@ form .exemple {
 }
 
 form input[type='email'], form input[type='password'] {
-  width: 100%;
+  width: calc(100% - 40px);
   border: none;
   background-color: var(--light-grey);
   border-bottom: solid var(--text) 2px;
@@ -401,6 +401,8 @@ form input[type='email'], form input[type='password'] {
   flex-direction: column;
   width: 100%;
   align-items: end;
+  margin: 30px 0;
+  gap: 6px;
 }
 
 .formBtn a {
@@ -412,7 +414,20 @@ form input[type='email'], form input[type='password'] {
   color: var(--blue);
 }
 
-.form a:hover span {
+.formBtn a:hover span {
   border-bottom: solid var(--blue) 2px;
-  color: var(--blue-hover);
+}
+
+form input[type='submit'] {
+  border: none;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 12px 24px 14px 24px;
+  transition: background-color 0.15s ease;
+}
+
+form input[type='submit']:hover {
+  cursor: pointer;
+  background-color: var(--blue-hover);
 }

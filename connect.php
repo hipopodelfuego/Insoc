@@ -33,7 +33,7 @@ session_start();
                     <a href=''><span>Pas encore de compte ?</span> →</a>
                 </div>
                 
-                <input type="submit" value="connexion" id="bouton_submit">
+                <input type="submit" value="Se connecter" id="bouton_submit">
             </form>
             
             <!-- <form action="php/register.php" method="POST" class='resgisterForm'>
