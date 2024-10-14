@@ -31,6 +31,15 @@ session_start();
                 <label for="email" class='exemple'>nom@exemple.com</label>
                 <input type="email" name="courriel" id="email" required>
 
+
+                <h3>Insérez vos noms et prénoms</h3>
+
+                <label for="name">Nom</label>
+                <input type="text" name="nom" id="name" required>
+
+                <label for="forname">Prénom</label>
+                <input type="text" name="prenom" id="forname" required>
+
                 
                 <h3>Choisir votre mot de passe</h3>
 
