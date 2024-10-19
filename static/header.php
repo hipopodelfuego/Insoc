@@ -7,7 +7,7 @@
         <div class='blueNav'>
             <a href='' class='blueBtn'>Bouton</a>
             <a href='' class='blueBtn'>Bouton</a>
-            <a href='' class='blueBtn'>Bouton</a>
+            <a href='connect.php' class='blueBtn'>Se connecter</a>
         </div>
     </section>
     <div class='separationNav'></div>

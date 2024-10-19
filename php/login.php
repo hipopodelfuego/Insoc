@@ -8,12 +8,11 @@ $mysqli = connectionDB();
 $email = $_POST['courriel'];
 $password = $_POST['mdp'];
 
-$hash = password_hash("$password", PASSWORD_BCRYPT, ['cost' => 10]);
+$connect = connect($mysqli,$email,$password);
 
-$connect = connect($mysqli,$email,$hash);
 session_start();
 
-if (isset($connect['id_u'])){
+if (isset($connect['id_u']) && password_verify($password,$connect['password'])){
     $_SESSION['email'] = "$email";
     $_SESSION['nom'] = "$connect[nom_u]";
     $_SESSION['prenom'] = "$connect[prenom_u]";

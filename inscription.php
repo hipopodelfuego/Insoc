@@ -61,6 +61,8 @@ session_start();
                     <input type="checkbox" name="cgu" id="condition" >
                     <label for="condition">J'accepte les conditions générales d'utilisation</label>
                 </div>
+
+                <input type="submit" value="S'inscrire" id="bouton_submit">
             </form>
         </main>
         <?php include("static/footer.php"); ?>

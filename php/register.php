@@ -9,14 +9,15 @@ $email = $_POST['courriel'];
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $password = $_POST['mdp'];
-$cgu = $_POST['cgu']
+$cgu = $_POST['cgu'];
 
 $hash = password_hash("$password", PASSWORD_BCRYPT, ['cost' => 10]);
+// $check = checking_mail($mysqli,$email);
 $register = register($mysqli,$email,$nom,$prenom,$hash);
 
 session_start();
 
-if (isset($register['id_u'])){
+if($register){
     $_SESSION['email'] = "$email";
     $_SESSION['nom'] = "$connect[nom_u]";
     $_SESSION['prenom'] = "$connect[prenom_u]";
