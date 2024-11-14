@@ -5,7 +5,7 @@
             <h1 class='navTitle'>Scrutin électronique</h1>
         </a>
         <div class='blueNav'>
-            <a href='' class='blueBtn'>Bouton</a>
+            <a href='programme.php' class='blueBtn'>Programme</a>
             <a href='' class='blueBtn'>Bouton</a>
             <a href='connect.php' class='blueBtn'>Se connecter</a>
         </div>
