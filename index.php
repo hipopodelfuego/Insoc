@@ -25,7 +25,17 @@ session_start();
                         <p>Les élections se terminent dans :</p>
                         <div id="countdown" class='decompte'></div>
                     </div>
-                    <a href='connect.php' class='voteBtn'>Je vote !</a>
+                    <?php 
+                        if($_SESSION['logged']){
+                            echo"
+                            <a href='vote' class='voteBtn'>Je vote !</a>
+                            ";
+                        } else {
+                            echo"
+                            <a href='connect' class='voteBtn'>Je vote !</a>
+                            ";
+                        }
+                    ?>
                 </div>
                 <div id='prochainesElections' class='elections'>
                     <div class='libelle'>
@@ -35,7 +45,28 @@ session_start();
                     <a href='' class='voteBtn'>Vérifier mon inscription</a>
                 </div>
             </section>
-            <section class='partisList'></section>
+            <div class='separation'>
+                <div class='line'></div>
+            </div>
+            <section class='progIndex'>
+                <h1>Liste des programmes</h1>
+                <p>La liste des programmes ci-dessous est triée de manière aléatoire. 
+                    L'ordre n'a aucune signification quant à la nature des partis présentés.</p>
+                <div class='partisListe'>
+                    <?php
+                        $liste_affiches = getAffiches($mysqli);
+                        shuffle($liste_affiches);
+                        foreach($liste_affiches as $affiche) {
+                            echo"
+                                <a href='programme.php?id_c={$affiche['id_c']}' class='partiAffiche'>
+                                    <img src='{$affiche['affiche_c']}' alt='Affiche du candidat {$affiche['nom_c']}' loading='lazy'>
+                                    <p>{$affiche['nom_c']}</p>
+                                </a>
+                            ";
+                        }
+                    ?>
+                </div>
+            </section>
         </main>
         <?php include("static/footer.php"); ?>
         <script src="js/index.js"></script>

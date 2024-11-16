@@ -1,4 +1,4 @@
-let date2 = new Date("2024-09-30T23:59:59");
+let date2 = new Date("2024-11-28T23:59:59");
 updateCountdown()
 
 function updateCountdown() {

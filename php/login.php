@@ -17,7 +17,7 @@ if (isset($connect['id_u']) && password_verify($password,$connect['password'])){
     $_SESSION['nom'] = "$connect[nom_u]";
     $_SESSION['prenom'] = "$connect[prenom_u]";
     $_SESSION['logged'] = true;
-    header('Location: ../index.php');
+    header('Location: ../index');
 }
 else {
     header('Location: ../connect.php#error_connection');

@@ -1,14 +1,13 @@
 <?php
 
-// function getImages($mysqli,$type){
-//     $requete = "SELECT *
-//                 FROM images
-//                 WHERE chemin LIKE '%img/$type/%'
-//                 ORDER BY ordre ASC
-//                 ";
-//     $liste_images = readDB($mysqli,$requete);
-//     return $liste_images;
-// }
+function getAffiches($mysqli){
+    $requete = "SELECT id_c,nom_c,affiche_c
+                FROM candidatures
+                ORDER BY id_c ASC
+                ";
+    $liste_affiches = readDB($mysqli,$requete);
+    return $liste_affiches;
+}
 
 function connect($mysqli,$email,$password){
     $requete1 = "SELECT *
