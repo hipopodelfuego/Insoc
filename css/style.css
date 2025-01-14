@@ -305,7 +305,7 @@ h1 {
 }
 
 .warningFooter {
-  width: 400px;
+  width: 300px;
   font-size: 12px;
 }
 
@@ -445,10 +445,17 @@ section.progIndex {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
+  width: 200px;
+  transform: scale(1);
+  transition:transform 0.2s ease-out;
+}
+
+.partiAffiche:hover {
+  transform: scale(1.1);
 }
 
 .partiAffiche img {
-  width: 200px;
+  width: inherit;
   height: auto;
   transform: scale(0);
   visibility: visible;
@@ -459,6 +466,23 @@ section.progIndex {
   animation-fill-mode: forwards;
 }
 
+.partiAffiche p {
+  width: inherit;
+  text-align: center;
+}
+
+.partiAffiche .nomCandidat {
+  color:var(--text) !important;
+  font-weight: 600;
+  margin: 15px 0 0 0;
+}
+
+.partiAffiche .partiCandidat {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
 @keyframes growImage {
   from {
     transform: scale(0);
@@ -466,10 +490,6 @@ section.progIndex {
   to { 
     transform: scale(1);
   }
-}
-
-.partiAffiche p {
-  margin: 15px 0 0 0;
 }
 
 
@@ -622,4 +642,38 @@ form .coche input[type='checkbox']:checked::after {
   justify-content: center;
   align-items: start;
   transform: translateY(-10%);
+}
+
+
+.programmeTitle {
+  width: calc(100% - 40px);
+  max-width: 800px;
+  font-size: 32px;
+  font-weight: 800;
+  margin:40px 0 5px 0;
+}
+
+.programmeParti {
+  width: calc(100% - 40px);
+  max-width: 800px;
+  color:var(--dark-grey);
+  font-size: 18px;
+  font-weight: 600;
+  margin:0px 0 25px 0;
+}
+
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pdf-viewer {
+  width: 100%; 
+  max-width: 800px; 
+  height: 1000px;
+  margin: 0;
+  box-shadow: 4px 4px 0px var(--blue); 
 }

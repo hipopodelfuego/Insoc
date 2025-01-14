@@ -1,7 +1,7 @@
 <?php
 
 function getAffiches($mysqli){
-    $requete = "SELECT id_c,nom_c,affiche_c
+    $requete = "SELECT id_c,nom_c,affiche_c,parti_c
                 FROM candidatures
                 ORDER BY id_c ASC
                 ";

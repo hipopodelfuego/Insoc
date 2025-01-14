@@ -5,8 +5,8 @@
             <h1 class='navTitle'>Scrutin électronique</h1>
         </a>
         <div class='blueNav'>
-            <a href='programme' class='blueBtn'>Programmes</a>
-            <!-- <a href='' class='blueBtn'>Bouton</a> -->
+            <!-- <a href='index' class='blueBtn'>Accueil</a> -->
+            <a href='index#programme' class='blueBtn'>Programmes</a>
             <?php 
                 if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     echo"
@@ -22,8 +22,18 @@
     </section>
     <div class='separationNav'></div>
     <section class='secondNav'>
-        <a href='' class='blackBtn'>Bouton</a>
-        <a href='' class='blackBtn'>Bouton</a>
-        <a href='' class='blackBtn'>Bouton</a>
+        <a href='index' class='blackBtn'>Accueil</a>
+        <?php 
+            if(isset($_SESSION['logged']) && $_SESSION['logged']){
+                echo"
+                    <a href='vote' class='blackBtn'>Voter</a>
+                ";
+            } else {
+                echo"
+                    <a href='connect' class='blackBtn'>Voter</a>
+                ";
+            }
+        ?>
+        <a href='index#programme' class='blackBtn'>Programmes</a>
     </section>
 </header>

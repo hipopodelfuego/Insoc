@@ -48,7 +48,7 @@ session_start();
             <div class='separation'>
                 <div class='line'></div>
             </div>
-            <section class='progIndex'>
+            <section class='progIndex' id='programme'>
                 <h1>Liste des programmes</h1>
                 <p>La liste des programmes ci-dessous est triée de manière aléatoire. 
                     L'ordre n'a aucune signification quant à la nature des partis présentés.</p>
@@ -60,7 +60,8 @@ session_start();
                             echo"
                                 <a href='programme.php?id_c={$affiche['id_c']}' class='partiAffiche'>
                                     <img src='{$affiche['affiche_c']}' alt='Affiche du candidat {$affiche['nom_c']}' loading='lazy'>
-                                    <p>{$affiche['nom_c']}</p>
+                                    <p class='nomCandidat'>{$affiche['nom_c']}</p>
+                                    <p class='partiCandidat'>{$affiche['parti_c']}</p>
                                 </a>
                             ";
                         }

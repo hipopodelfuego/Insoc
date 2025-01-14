@@ -4,7 +4,7 @@
             <img class='logoRF' src='css/img/Logo_RF.svg'>
         </a>
         <div class='warningFooter'>
-            Ce site est factice. Il reproduit la charte graphique du gouvernement pour simuler un prototype d'une plateforme de vote en ligne
+            Ce site est factice <br><br> Il s'agit d'un prototype de plateforme de vote en ligne non officiel
         </div>
     </section>
 </footer>
