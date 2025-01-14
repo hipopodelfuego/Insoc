@@ -30,7 +30,7 @@ session_start();
 
                 <div class='formBtn'>
                     <a href=''><span>Mot de passe oublié ?</span> →</a>
-                    <a href='inscription.php'><span>Pas encore de compte ?</span> →</a>
+                    <a href='inscription'><span>Pas encore de compte ?</span> →</a>
                 </div>
                 
                 <input type="submit" value="Se connecter" id="bouton_submit">

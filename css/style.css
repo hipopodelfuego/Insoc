@@ -677,3 +677,94 @@ form .coche input[type='checkbox']:checked::after {
   margin: 0;
   box-shadow: 4px 4px 0px var(--blue); 
 }
+
+
+.dialogue {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width:calc(100lvw - 40px);
+  max-width: 620px;
+  gap: 8px;
+  margin:50px 0;
+}
+
+.dialogue.disabled {
+  display: none;
+}
+
+.dialogue .info  {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-grey);
+  border-left: solid var(--blue-active) 4px;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dialogue h3 {
+  margin: 0 ;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 25px 0 5px 0;
+}
+
+.dialogue .info h3 {
+  margin: 0 0 15px 0;
+  font-size: inherit;
+}
+
+.dialogue .info p {
+  margin: 0;
+  font-weight: inherit;
+}
+
+.dialogue .info span {
+  font-weight: 700;
+}
+
+.dialogue .btn {
+  border: none;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 12px 24px 14px 24px;
+  transition: background-color 0.15s ease;
+  margin:20px 0;
+}
+
+.dialogue .btn:hover {
+  cursor: pointer;
+  background-color: var(--blue-hover);
+}
+
+.page {
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page.enabled {
+  display: flex;
+}
+
+.page .btn {
+  border: none;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 12px 24px 14px 24px;
+  transition: background-color 0.15s ease;
+  margin:20px;
+}
+
+.page .btn:hover {
+  cursor: pointer;
+  background-color: var(--blue-hover);
+}

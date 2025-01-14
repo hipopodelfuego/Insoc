@@ -10,7 +10,7 @@
             <?php 
                 if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     echo"
-                    <a href='account' class='blueBtn'>Mon compte</a>
+                    <a href='php/logout.php' class='blueBtn'>Se déconnecter</a>
                     ";
                 } else {
                     echo"
