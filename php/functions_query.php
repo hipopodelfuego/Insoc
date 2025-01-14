@@ -24,5 +24,13 @@ function register($mysqli,$email,$nom,$prenom,$password){
     return $register;
 }
 
+function getCandidat($mysqli,$id_c){
+    $requete = "SELECT *
+                FROM candidatures
+                WHERE id_c = '$id_c';";
+    $candidat = readDB($mysqli,$requete);
+    return $candidat[0];
+}
+
 
 ?>

@@ -26,7 +26,7 @@ session_start();
                         <div id="countdown" class='decompte'></div>
                     </div>
                     <?php 
-                        if($_SESSION['logged']){
+                        if(isset($_SESSION['logged']) && $_SESSION['logged']){
                             echo"
                             <a href='vote' class='voteBtn'>Je vote !</a>
                             ";
@@ -42,7 +42,7 @@ session_start();
                         <p>Les prochaines élections commencent dans :</p>
                         <div id="countdown" class='decompte'></div>
                     </div>
-                    <a href='' class='voteBtn'>Vérifier mon inscription</a>
+                    <a href='' class='voteBtn'>Je me tiens prêt !</a>
                 </div>
             </section>
             <div class='separation'>

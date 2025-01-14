@@ -234,6 +234,7 @@ h1 {
 }
 
 .firstNav .blueNav .blueBtn {
+  width: max-content;
   font-size: 14px;
   color: var(--blue);
   padding:6px 12px 8px 12px;
@@ -301,6 +302,11 @@ h1 {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: start;
+}
+
+.warningFooter {
+  width: 400px;
+  font-size: 12px;
 }
 
 main {

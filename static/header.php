@@ -6,9 +6,9 @@
         </a>
         <div class='blueNav'>
             <a href='programme' class='blueBtn'>Programmes</a>
-            <a href='' class='blueBtn'>Bouton</a>
+            <!-- <a href='' class='blueBtn'>Bouton</a> -->
             <?php 
-                if($_SESSION['logged']){
+                if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     echo"
                     <a href='account' class='blueBtn'>Mon compte</a>
                     ";

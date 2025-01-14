@@ -9,6 +9,8 @@ require_once("php/functions-DB.php");
 require_once("php/functions_query.php");
 $mysqli = connectionDB();
 session_start();
+
+$candidat=getCandidat($mysqli,$_GET['id_c']);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,7 +36,7 @@ session_start();
         <?php include("static/header.php"); ?>
         <main>
             <div class="pdf-container">
-                <embed src="<?php echo 'css/pdf/arthaud.pdf'; ?>" type="application/pdf" class="pdf-viewer">
+                <embed src="<?php echo "{$candidat['programme_c']}"; ?>" type="application/pdf" class="pdf-viewer">
             </div>
         </main>
         <?php include("static/footer.php"); ?>
