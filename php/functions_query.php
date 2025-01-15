@@ -32,15 +32,6 @@ function getCandidat($mysqli,$id_c){
     return $candidat[0];
 }
 
-function getCandidats($mysqli){
-    $requete = "SELECT id_c,nom_c
-                FROM candidatures
-                ORDER BY nom_c ASC
-                ";
-    $liste_candidats = readDB($mysqli,$requete);
-    return $liste_candidats;
-}
-
 
 
 ?>

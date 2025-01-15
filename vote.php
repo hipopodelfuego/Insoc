@@ -38,15 +38,31 @@ if(!isset($_SESSION['logged']) || !$_SESSION['logged']){
                 <button onclick="dialogueOk()" class='btn' >J'ai compris</button>
             </div>
             <div class="page">
-                <h1>Je vote</h1>
+                <div class='container'>
+                    <div class='entitle'>
+                        <h1>Je vote</h1>
+                        <p>La liste des programmes ci-dessous est triée par ordre alphabétique</p>
+                    </div>
                 <?php 
-                    $liste_candidats = getCandidats($mysqli);
+                    $liste_candidats = getAffiches($mysqli);
                     foreach($liste_candidats as $candidat) {
                         echo"
-                            <div  class='btn'>{$candidat['nom_c']}</div>
+                            <div class='candidat'>
+                                <div class='left'>
+                                    <img src='{$candidat['affiche_c']}' alt='Affiche du candidat {$candidat['nom_c']}'>
+                                    <div class='textContainer'>
+                                        <p class='nom'>{$candidat['nom_c']}</p>
+                                        <p class='parti'>{$candidat['parti_c']}</p>
+                                    </div>
+                                </div>
+                                <div class='right'>
+                                    <a href='php/avote.php?id_c={$candidat['id_c']}'>Voter</a>
+                                </div>
+                            </div>
                         ";
                     }
                 ?>
+                </div>
             </div>
         </main>
         <?php include("static/footer.php"); ?>

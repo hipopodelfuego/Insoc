@@ -6,15 +6,15 @@
         </a>
         <div class='blueNav'>
             <!-- <a href='index' class='blueBtn'>Accueil</a> -->
-            <a href='index#programme' class='blueBtn'>Programmes</a>
+            <a href='index#programme' class='blueBtn'> <img src='css/img/icon_desc.svg'> Programmes</a>
             <?php 
                 if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     echo"
-                    <a href='php/logout.php' class='blueBtn'>Se déconnecter</a>
+                    <a href='php/logout.php' class='blueBtn'> <img src='css/img/icon_account.svg'> Se déconnecter</a>
                     ";
                 } else {
                     echo"
-                    <a href='connect' class='blueBtn'>Se connecter</a>
+                    <a href='connect' class='blueBtn'> <img src='css/img/icon_account.svg'> Se connecter</a>
                     ";
                 }
             ?>

@@ -16,6 +16,7 @@ if (isset($connect['id_u']) && password_verify($password,$connect['password'])){
     $_SESSION['nom'] = "$connect[nom_u]";
     $_SESSION['prenom'] = "$connect[prenom_u]";
     $_SESSION['logged'] = true;
+    $_SESSION['notifVote'] = false;
     header('Location: ../index');
 }
 else {

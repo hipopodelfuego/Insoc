@@ -234,6 +234,9 @@ h1 {
 }
 
 .firstNav .blueNav .blueBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: max-content;
   font-size: 14px;
   color: var(--blue);
@@ -244,6 +247,18 @@ h1 {
 
 .firstNav .blueNav .blueBtn:hover{
   background-color: var(--light-grey);
+}
+
+.firstNav .blueNav .blueBtn img {
+  height: 22px;
+  width: auto;
+  padding-right: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .firstNav .blueNav {
+    display: none;
+  }
 }
 
 .separationNav {
@@ -277,7 +292,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 200px;
   background-color: var(--white);
   border-top:solid var(--blue) 3px;
   margin-top: 100px;
@@ -741,20 +756,64 @@ form .coche input[type='checkbox']:checked::after {
 }
 
 .page {
-  width: calc(100% - 40px);
-  max-width: 1100px;
   display: none;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .page.enabled {
   display: flex;
 }
 
-.page .btn {
+.page .container {
+  width:calc(100lvw - 40px);
+  max-width: 620px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.page .container .candidat {
+  width: 100%;
+  background-color: var(--light-grey);
+  border-left: solid var(--blue-active) 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 200px;
+  margin:15px 0;
+}
+
+.candidat .left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
+  width: 80%;
+}
+
+.candidat .right{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: end;
+  height: 100%;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.page .container .candidat img {
+  height: 160px;
+  margin: 0 20px;
+  width: auto;
+}
+
+.page .container .candidat a {
   border: none;
   font-size: 18px;
   color: var(--white);
@@ -764,7 +823,82 @@ form .coche input[type='checkbox']:checked::after {
   margin:20px;
 }
 
-.page .btn:hover {
+.page .container .candidat a:hover {
   cursor: pointer;
   background-color: var(--blue-hover);
+}
+
+.candidat .nom {
+  font-size: 20px;
+  font-weight: 700 !important;
+  margin: 0;
+}
+
+.candidat .parti {
+  margin: 0;
+  color:var(--dark-grey);
+}
+
+.page .container .entitle {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.page .container .entitle h1 {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.page .container .entitle p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 20px 0 30px 0;
+  color: var(--dark-grey);
+}
+
+
+.notifVote {
+  position: fixed;
+  z-index:50;
+  bottom: 10%;
+  right: 0%;
+  width:350px;
+  /* height: 100px; */
+  background-color: var(--light-grey);
+  border-left: solid var(--blue-active) 4px;
+  box-shadow: 2px 2px 6px var(--grey);  
+  transform: translateX(100%);
+  
+  animation-duration: 4s;
+  animation-name: notif;
+  animation-iteration-count: 1;
+  animation-direction: ease;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes notif {
+  0% {
+    transform: translateX(100%);
+  }
+  10% { 
+    transform: translateX(0%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.notifVote h3 {
+  padding: 10px 20px 0 20px;
+  margin: 0;
+}
+
+.notifVote p {
+  color: var(--dark-grey);
+  padding: 10px 20px 20px;
+  margin: 0;
 }

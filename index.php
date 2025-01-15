@@ -19,6 +19,14 @@ session_start();
     <body>
         <?php include("static/header.php"); ?>
         <main>
+            <?php 
+                if(isset($_SESSION['notifVote']) && $_SESSION['notifVote']){
+                    echo"<div class='notifVote'>
+                        <h3>Votre vote a été pris en compte</h3>
+                        <p>Merci d'avoir voté !</p>
+                    </div>";
+                }
+            ?>
             <section class='electionsBackground'>
                 <div id='electionsEnCours' class='elections disabled'>
                     <div class='libelle'>
